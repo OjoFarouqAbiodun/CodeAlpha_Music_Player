@@ -38,6 +38,7 @@ body {
 
 .container {
     background-color: #ffffff3d;
+    /* background-color: #fff; */
     width: 400px;
     height: 500px;
     border-radius: 1rem;
@@ -77,16 +78,57 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: center;
     color:#fff;
 }
 
 .player_progress {
-    border-color: #c6bfbf;
+    background-color: #c6bfbf;
     border-radius: 5px;
     height: 6px;
     width: 90%;
-    
+    margin: 40px 20px 35px;
+    position: relative;
+    cursor: pointer;    
 }
 
+.progress {
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: all 0.2s linear;
+}
+
+.music_duration {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -25px;
+}
+
+
+.player_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid {
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    margin-right: 30px;
+    user-select: none;
+    transition: all 0.3s ease-in;
+}
+
+.fa-solid:hover {
+    filter: brightness(40%);
+}
+
+.play-button {
+    font-size: 44px;
+}
